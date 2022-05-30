@@ -1,0 +1,129 @@
+.team {
+    padding: 24px 0 0;
+
+    &__title {
+        color: rgba(61, 167, 180, 1);
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 171.5%;
+    }
+
+    &__subtitle {
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 140%;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: minmax(300px, 47.5%) minmax(250px, 350px);
+        gap: max(135px);
+
+        @media screen and (max-width: 960px) {
+            // gap: 60px;
+        }
+    }
+
+    &__wrapper_btns {
+        align-self: flex-end;
+        display: flex;
+        gap: 48px;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__discription {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: rgba(14, 14, 44, 0.6);
+    }
+
+    @media screen and (max-width:768px) {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        &__col {
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 16px;
+            line-height: 22px;
+            color: #F8A90D;
+            width: 100%;
+            text-align: left;
+        }
+
+        &__subtitle {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+
+        &__discription {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__wrapper_btns {
+            align-self: center;
+        }
+    }
+}
+
+.teamCard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(250px, 350px) auto auto;
+
+    &__img {}
+
+    &__title {
+        font-weight: 800;
+        font-size: 22px;
+        line-height: 140%;
+        margin-bottom: 12px;
+    }
+
+    &__wrapper_img {
+        width: 100%;
+        border-radius: 18px;
+        border: none;
+        background-color: rgba(61, 167, 180, 1);
+        margin-bottom: 16px;
+    }
+
+    &__position {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: rgba(14, 14, 44, 0.6);
+    }
+    @media screen and (max-width:768px) {
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .teamCard {
+        grid-template-columns: minmax(350px 300px)
+    }
+
+    .teamCard__wrapper_img {
+        max-width: 350px;
+        min-width: 300px;
+
+    }
+
+
+}
