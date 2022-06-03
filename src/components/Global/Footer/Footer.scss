@@ -1,0 +1,147 @@
+.footer {
+    background: rgba(160, 164, 171, 0.1);
+    padding: 48px 0 76px;
+
+    .container {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 20px;
+        letter-spacing: 0.000001em;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+
+    &__col {
+        width: 23%;
+
+    }
+
+    &__discription {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: rgba(14, 14, 44, 0.8);
+    }
+
+    &__list_p {
+        padding-left: 30px;
+    }
+
+    &__subtitle {
+        display: block;
+        min-height: 25px;
+        margin: 25px 0 25px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+    }
+
+    &__social {
+        font-weight: 500;
+        font-size: 16px;
+        color: rgba(14, 14, 44, 0.8);
+    }
+
+    &__icon {
+        height: 25px;
+        width: 25px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    &__item {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 171.5%;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 12px;
+        /* or 125% */
+
+
+        color: rgba(14, 14, 44, 0.8);
+    }
+
+    &__col_md {
+        display: none;
+
+    }
+
+    &__form {
+        background: #FFFFFF;
+        border: 1px solid #767676;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        padding: 14px 18px;
+        max-width: 320px;
+    }
+
+    &__input {
+        height: 20px;
+        display: block;
+        width: calc( 100% - 25px);
+    }
+
+    &__btn {
+        display: block;
+        background: transparent;
+        height: 20px;
+        width: 20px;
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 0;
+
+        .container {
+            flex-direction: column;
+        }
+
+        &__about {
+            display: none;
+        }
+
+        &__col {
+            width: 100%;
+        }
+
+        &__col_md {
+            margin-top: 40px;
+            padding: 15px 0;
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            background: #D9D9D9;
+            text-align: center;
+            color: rgba(14, 14, 44, 0.8);
+        }
+    }
+}
+
+.flex_center {
+    justify-content: center;
+}

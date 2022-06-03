@@ -1,0 +1,160 @@
+.title {
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    margin-bottom: 178px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: minmax(400px, 2fr) minmax(200px, 1fr);
+    gap: 30px;
+    margin-bottom: 64px;
+}
+
+.col_2 {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+    gap: 30px;
+}
+
+
+
+.btn {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #3DA7B4;
+
+
+    border: 2px solid #3DA7B4;
+    border-radius: 4px;
+}
+
+.cardSmall {
+
+
+    &__title {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        color: #3DA7B4;
+        margin-bottom: 2px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    &__img {
+        display: block;
+        width: auto;
+        height: 294px;
+        width: 100%;
+        border: 0.5px solid rgba(160, 164, 171, 0.4);
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+}
+
+.cardBig {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    &__img {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        color: #3DA7B4;
+        margin-bottom: 2px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title {
+        font-size: 16px;
+        line-height: 22px;
+        color: #F8A90D;
+        margin-bottom: 24px;
+    }
+
+    .box {
+        grid-template-columns: minmax(300px, 1fr);
+
+    }
+
+    .col_2 {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap: 10px;
+
+    }
+
+    .cardSmall {
+        padding: 0 10px;
+        max-width: 420px;
+        width: 100%;
+        margin: auto;
+
+        &__img {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        &__title {
+            margin-bottom: 2px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .cardBig {
+        padding: 0 10px;
+        max-width: 420px;
+        margin: auto;
+
+        &__title {
+            margin-bottom: 2px;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 19px;
+        }
+    }
+
+    .wrapper {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .cardSmall {
+        &__img {}
+    }
+}

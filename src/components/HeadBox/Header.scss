@@ -2,6 +2,8 @@
     display: flex;
     justify-content: space-between;
     padding: 14px 10px;
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -12,6 +14,7 @@
     font-size: 19px;
     line-height: 20px;
     letter-spacing: 0.000001em;
+    z-index: 20;
 }
 
 .header__logo img {
@@ -27,10 +30,9 @@
     font-size: 15px;
     line-height: 16px;
 
-    @media screen and (max-width:768px) {
-        display: none;
-    }
+
 }
+
 
 .header__li {
     height: 100%;
@@ -82,5 +84,41 @@
 
     @media screen and (max-width:768px) {
         display: block;
+        z-index: 20;
     }
+}
+
+@media screen and (max-width:768px) {
+
+    .header__nav {
+        position: fixed;
+        height: 1000px;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        z-index: 15;
+        background: white;
+        transition: .5s;
+    }
+
+    .header__nav.open {
+        top: 0;
+        right: 0;
+    }
+    .header__nav ul {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding: 100px 0 0 20px;
+        align-items: flex-start;
+        gap: 35px;
+    }
+    .header__li.active::after {
+
+        bottom: -10px;
+        height: 3px;
+
+        
+    }
+
 }

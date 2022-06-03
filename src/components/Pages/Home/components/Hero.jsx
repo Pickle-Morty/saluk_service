@@ -5,16 +5,22 @@ import messageIcon from "../../../img/icons/messageIcon__white.png"
 import arrowLeft from "../../../img/icons/arrowLeftYellow.png"
 import vectorArc from "../../../img/content/homePage/vectorArc.png"
 import backgroundHero from "../../../img/content/homePage/backgroundHero.png"
+import backgroundHeroImg from "../../../img/content/homePage/backgroundHeroImg.svg"
+import MyImgBox from './MyImgBox';
 
 
 const Hero = () => {
+    const heroArray = [
+        img1, img1
+    ]
     return (
         <div className={styles.wrapper}>
+
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.hello}>Привет,</div>
                     <div className={styles.title}>
-                        Мы помогаем <span className={styles.color_green} >государству</span> и <br /> <span className={styles.color_yellow}>бизнесу</span> воплощать свои идеи в жизнь
+                        Мы помогаем <span className={styles.color_green} >государству</span> и <br className={styles.xl} /> <span className={styles.color_yellow}>бизнесу</span> воплощать свои идеи в жизнь
                         </div>
                     <div className={styles.discription}>
                         Талантливая команда, которая поможет вам в создании полезного и простого в использовании продукта
@@ -25,12 +31,8 @@ const Hero = () => {
                         <a href="" className={styles.linkBtn_m}>Посмотреть портфолио<img src={arrowLeft} alt="" /></a>
                     </div>
                 </div>
-
-
-                <div className={styles.boxImg}>
-                    <img src={img1} alt="" className={styles.img} />
-                </div>
-
+                <MyImgBox array={heroArray} />
+                <img src={vectorArc} className={styles.vectorArc} alt="" />
             </div>
             <img src={backgroundHero} className={styles.background} alt="" />
 

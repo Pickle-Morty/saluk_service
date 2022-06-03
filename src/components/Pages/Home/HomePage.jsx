@@ -19,6 +19,8 @@ import team1 from "../../img/content/homePage/team.jpg"
 
 import Partners from './components/Partners';
 import Team from './components/Team';
+import Portfolio from './components/Portfolio';
+import Footer from '../../Global/Footer/Footer';
 
 const HomePage = () => {
 
@@ -63,7 +65,10 @@ const HomePage = () => {
                     </div>
                 </section>
                 <Team />
+                <Portfolio />
+
             </main>
+            <Footer />
         </>
     )
 }

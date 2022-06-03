@@ -1,0 +1,79 @@
+.boxImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 538px;
+    margin-left: 25px;
+
+    @media screen and (max-width:768px) {
+        margin: 30px 0 30px 25px;
+        min-height: 200px;
+
+        grid-row-start: 1;
+    }
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    opacity: 0;
+
+    &__wrapper {
+        width: 78%;
+        position: relative;
+        margin: auto;
+    }
+    &__background {
+        position: absolute;
+        z-index: -1;
+        width: 90%;
+        animation: hero_bg_animation;
+        animation-duration: 1.5s;
+    }
+
+    &__visible {
+        position: absolute;
+        display: block;
+        margin: auto;
+        width: 100%;
+
+        height: auto;
+        animation: hero_animation;
+        animation-duration: 1s;
+        top: 0;
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .xl {
+        display: none;
+    }
+}
+
+@keyframes hero_animation {
+    0% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hero_bg_animation {
+    0% {
+        transform: scale(0.1);
+    }
+
+    40% {
+        transform: scale(0.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

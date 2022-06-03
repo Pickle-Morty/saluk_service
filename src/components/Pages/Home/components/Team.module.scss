@@ -1,5 +1,43 @@
+.nextArrow {
+    background-image: url("../../../img/icons/arrowRightBrn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    right: 98px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        right: calc(50% - 72px) ;
+    }
+}
+
+.prevArrow {
+    background-image: url("../../../img/icons/arrowLeftBtn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    right: 194px;
+    z-index: 10;
+    cursor: pointer;
+
+
+    @media screen and (max-width:768px) {
+        right: calc(50% + 24px) ;
+    }
+}
+
 .team {
     padding: 24px 0 0;
+    position: relative;
 
     &__title {
         color: rgba(61, 167, 180, 1);
@@ -8,6 +46,19 @@
         line-height: 171.5%;
     }
 
+
+    &__background {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+
+        @media screen and (max-width: 960px) {
+            display: none;
+        }
+    }
+
+
     &__subtitle {
         font-weight: 800;
         font-size: 34px;
@@ -15,19 +66,18 @@
     }
 
     &__wrapper {
+        // width: 95%;
         display: grid;
         grid-template-columns: minmax(300px, 47.5%) minmax(250px, 350px);
         gap: max(135px);
 
-        @media screen and (max-width: 960px) {
-            // gap: 60px;
-        }
     }
 
     &__wrapper_btns {
         align-self: flex-end;
         display: flex;
         gap: 48px;
+        height: 48px;
     }
 
     &__col {
@@ -43,7 +93,15 @@
         color: rgba(14, 14, 44, 0.6);
     }
 
+    &__slider {
+        overflow: hidden;
+    }
+
+
+
     @media screen and (max-width:768px) {
+        padding: 24px 0 64px;
+
         &__wrapper {
             display: grid;
             grid-template-columns: 1fr;
@@ -74,18 +132,24 @@
             font-size: 16px;
             line-height: 20px;
         }
+
         &__wrapper_btns {
             align-self: center;
         }
     }
 }
 
+
 .teamCard {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: minmax(250px, 350px) auto auto;
+    padding-bottom: 64px;
 
-    &__img {}
+    &__img {
+        display: block;
+        height: 100%;
+    }
 
     &__title {
         font-weight: 800;
@@ -95,6 +159,7 @@
     }
 
     &__wrapper_img {
+        overflow: hidden;
         width: 100%;
         border-radius: 18px;
         border: none;
@@ -108,7 +173,22 @@
         line-height: 140%;
         color: rgba(14, 14, 44, 0.6);
     }
+
     @media screen and (max-width:768px) {
+        padding-bottom: 74px;
+
+        &__title {
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &__position {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
 
     }
 

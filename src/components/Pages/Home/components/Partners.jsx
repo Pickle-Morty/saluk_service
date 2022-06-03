@@ -19,9 +19,15 @@ const Partners = () => {
     var settings = {
         className: "slider variable-width",
         dots: false,
-        infinite: false,
+        infinite: true,
         variableWidth: true,
         swipe: false,
+
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1500,
+        autoplaySpeed: 1200,
+        cssEase: "ease-in-out",
 
         responsive: [
             {
@@ -29,16 +35,6 @@ const Partners = () => {
                 settings: {
                     className: "slider",
                     variableWidth: false,
-
-                    dots: true,
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    speed: 2000,
-                    autoplaySpeed: 2000,
-                    cssEase: "linear",
-
                     slidesToShow: 2,
 
 
