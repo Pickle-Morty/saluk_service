@@ -1,0 +1,54 @@
+.about {
+    width: 66px;
+    height: 34px;
+    margin: 62px 687px 24px;
+    
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+    /* 2 */
+    color: #3DA7B4;
+}
+
+.color {
+    &_green {
+        color: rgba(29, 167, 180, 1);
+        background-image: linear-gradient(to right, rgba(29, 167, 180, 1) 0%, rgba(29, 167, 180, 1) 100%);
+        background-repeat: repeat-x;
+        background-position: 0 89%;
+        background-size: 100% 2px;
+    }
+
+    &_yellow {
+        color: rgba(248, 169, 13, 1);
+
+        background-image: linear-gradient(to right, rgba(248, 169, 13, 1) 0%, rgba(248, 169, 13, 1) 100%);
+        background-repeat: repeat-x;
+        background-position: 0 89%;
+        background-size: 100% 2px;
+    }
+}
+
+.title {
+    
+
+
+    margin-left: 380px;
+    margin-right: 300px;
+    margin-bottom: 16px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 130%;
+    /* or 47px */
+
+    text-align: center;
+
+    color: #0E0E2C;
+}

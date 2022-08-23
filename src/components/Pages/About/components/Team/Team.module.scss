@@ -1,0 +1,115 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+	width: 100%;
+	line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+._container {
+	margin: 0 auto;
+	max-width: 1110px;
+}
+
+.team {
+	margin-top: 200px;
+}
+
+.team__body {
+	display: flex;	
+}
+
+.team__title-descr {
+	margin-right: 30px;
+}
+
+.team__title {
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 29px;
+	color: #3DA7B4;
+}
+
+.team__descr {
+	max-width: 350px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 140%;
+	position: relative;
+}
+
+.personal__blocks {
+	display: flex;
+	gap: 30px;
+	
+}
+
+.personal__block_title {
+	margin-top: 16px;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.personal__block_descr {
+	margin-top: 36px;
+	align-items: center;
+	font-family: 'Manrope';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 25px;
+	color: rgba(14, 14, 44, 0.6);
+}
+
+.personal__block_descr:nth-child(2) {
+	margin-top: 12px;
+}
+
