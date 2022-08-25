@@ -1,30 +1,8 @@
 import styles from "./Team.module.scss"
-import arrowLeftBtn from "../../../img/icons/arrowLeftBtn.svg"
-import arrowRightBtn from "../../../img/icons/arrowRightBrn.svg"
 import backgroundTeam from "../../../img/content/homePage/backgroundTeam.svg"
 import Slider from "react-slick";
-// import img1 from 'https://previews.123rf.com/images/pressmaster/pressmaster1704/pressmaster170400062/75330432-banquero-elegante.jpg'
+import {SampleNextArrow, SamplePrevArrow} from "../../../UI/Buttons"
 
-function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={styles.nextArrow}
-        onClick={onClick}
-      />
-    );
-  }
-  
-  function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
-    return (
-      <div
-        className={styles.prevArrow}
-        onClick={onClick}
-      />
-    );
-  }
-  
 
 
 

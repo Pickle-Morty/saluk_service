@@ -1,61 +1,50 @@
 import React from "react";
-import Slider from "react-slick";
 import styles from "../Reviews/Reviews.module.scss"
-import ava from "../../../../img/content/AboutPage/Ellipse.png";
-import secondAva from "../../../../img/content/AboutPage/EllipseTwo.png";
+import Slider from "react-slick";
+import {SampleNextArrow, SamplePrevArrow} from "../../../../UI/Buttons"
+
 
 const Reviews = () => {
-
-
-
-
-
-    var settings = {
-        className: "slider variable-width",
+    const settings = {
+        className: styles.team__slider,
         dots: false,
         infinite: true,
-        variableWidth: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         swipe: false,
 
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 1500,
-        autoplaySpeed: 1200,
-        cssEase: "ease-in-out",
-
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    className: "slider",
-                    variableWidth: false,
-                    slidesToShow: 2,
-
-
-                }
-            },
-            {
-                breakpoint: 540,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-
-                }
-            }
-        ]
-
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
 
+    const teamData = [
+        {
+            name: 'Салиева Нургул', position: 'Директор',
+            img: 'https://www.caproasia.com/wp-content/uploads/2015/08/Priority-Banker-Girl-Office-3.jpg',
+            text: 'Наша команда создателей цифровых продуктов поднимет вашу идею на новый уровень и поможет вам с вашим продуктом.',
+            title: 'Команда Салык Сервис',
+            subtitle: 'Команда креативщиков Who Excited поможет вам с вашей идеей'
+        },
+        {
+            name: 'Дастан Бообеков', position: 'Менеджер',
+            img: 'https://previews.123rf.com/images/pressmaster/pressmaster1704/pressmaster170400062/75330432-banquero-elegante.jpg',
+            text: 'Lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo',
+            title: 'Команда Салык Сервис',
+            subtitle: 'Команда маркетологов Who Excited поможет вам продать вашу идею'
+        },
+    ]
 
+    
 
     return (
-        <section className={styles.slider}>
-            <div className={styles.container_container}>
+        <section className={`${styles.reviews}`}>
+            <div className={`${styles.container_container} container`}>
                 <h4 className={styles.title__slide}>Отзывы</h4>
                 <h4 className={styles.title__descr}>Вы все еще сомневаетесь в сотрудничестве с нами? Проверьте, что они говорят
                     о нас</h4>
                 <div className={styles.slider__container}>
-                    <div className={styles.slide}>
+                    {/* <div className={styles.slide}>
                         <div className={styles.slide__first_first}>
                             <div className={styles.slide__first_title}> Наша команда создателей цифровых продуктов и Tch Bring
                                 Skilled поднимет вашу идею на новый уровень и поможет вам с вашим продуктом.</div>
@@ -82,12 +71,12 @@ const Reviews = () => {
                         </div>
                         <div className={styles.slide}>
                         </div>
-                        {/* <div className={styles.slide}>
+                        <div className={styles.slide}>
                             <h1>3</h1>
                         </div>
                         <div class={styles.slide}>
                             <h1>4</h1>
-                        </div> */}
+                        </div>
                     </div>
                     <div className={styles.btn__container}>
                         <button type="button" className={styles.prev__btn}>
@@ -96,7 +85,30 @@ const Reviews = () => {
                         <button type="button" className={styles.next__btn}>
                             next
                         </button>
-                    </div>
+                    </div> */}
+
+                    <Slider {...settings}>
+                        {teamData.map((person, id) =>
+                            <div key={id} className={styles.team__slider_wrapper}>
+                                <div className={styles.team__wrapper}>
+                                    <div className={styles.team__col}>
+                                        <h2 className={styles.team__title}>{person.title}</h2>
+                                        <div className={styles.team__subtitle}>{person.subtitle}</div>
+                                        <div className={styles.team__discription}>{person.text}</div>
+                                    </div>
+                                    <div className={styles.team__col}>
+                                        <div className={styles.teamCard}>
+                                            <div className={styles.teamCard__wrapper_img}>
+                                                <img src={person.img} alt="" className={styles.teamCard__img} />
+                                            </div>
+                                            <div className={styles.teamCard__title}>{person.name}</div>
+                                            <div className={styles.teamCard__position}>{person.position}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>)}
+                        </Slider>
                 </div>
             </div>
         </section>

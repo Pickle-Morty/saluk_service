@@ -15,8 +15,6 @@ import newsImage4 from "../../img/content/homePage/news4.jpg"
 import newsImage5 from "../../img/content/homePage/news5.jpg"
 
 
-import team1 from "../../img/content/homePage/team.jpg"
-
 import Partners from './components/Partners';
 import Team from './components/Team';
 import Portfolio from './components/Portfolio';
@@ -34,6 +32,7 @@ const HomePage = () => {
     const newsArray = [
         {img: newsImage2, date: '14/05/2022', title: 'С 15 мая субъекты, занимающиеся оборотом маркированной продукции, нефти и нефтепродуктов, обязаны применять ЭТТН'},
         {img: newsImage3, date: '13/05/2022', title: 'ГНС в Ошской области изъяла более 3 тысяч бутылок алкоголя с поддельными акцизными марками'},
+        
         {img: newsImage4, date: '13/05/2022', title: 'Утверждены сроки обязательного применения электронной товаротранспортной накладной'},
         {img: newsImage5, date: '19/04/2022', title: 'ГНС за 4 месяца собрала 48 млрд сомов налогов'},
     ]

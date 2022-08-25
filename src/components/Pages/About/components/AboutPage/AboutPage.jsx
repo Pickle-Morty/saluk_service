@@ -10,27 +10,23 @@ import Title from "../Title/Title";
 
 const AboutPage = () => {
 
-    return(
+    return (
         <div>
-            <div className={styles.container}>
-            <div>
-                <Title/>
+            <div className='container'>
+
+                <> {/* Объеденить в Компоненту Hero */}
+                    <Title />
+                    <Base />
+                    {/* <Conversation /> */}
+                </>
+
+                <div>
+                    <Team />
+                </div>
             </div>
-            <div>
-                <Base/>
-            </div>
-            <div>
-                <Conversation/>
-            </div>
-            <div>
-                <Team />
-            </div>
-            <div>
-                <Reviews/>
-            </div>
-            
-        </div>
-        <Footer/>
+
+            <Reviews />
+            <Footer />
         </div>
     )
 }

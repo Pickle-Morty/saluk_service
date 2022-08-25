@@ -19,7 +19,7 @@ const Header = () => {
                 
                 <ul>
                     <li className="header__li active">
-                        <NavLink to="/Home">Главная</NavLink>
+                        <NavLink to="/">Главная</NavLink>
                         </li>
                     <li className="header__li">
                         <NavLink to="/About">О нас</NavLink>

@@ -1,0 +1,36 @@
+.nextArrow {
+    background-image: url("../img/icons/arrowRightBrn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    right: 98px;
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        right: calc(50% - 72px) ;
+    }
+}
+
+.prevArrow {
+    background-image: url("../img/icons/arrowLeftBtn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    right: 194px;
+    z-index: 10;
+    cursor: pointer;
+
+
+    @media screen and (max-width:768px) {
+        right: calc(50% + 24px) ;
+    }
+}
