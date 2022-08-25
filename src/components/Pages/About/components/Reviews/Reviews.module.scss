@@ -1,0 +1,193 @@
+.slider {
+    margin-top: 180px;
+    padding-bottom: 200px;
+    max-height: 700px;
+    margin-bottom: 200px;
+}
+
+.slider__container {
+
+    margin: 0 auto;
+    height: 604px;
+    max-width: 1082px;
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    place-items: start;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.slide h1 {
+    font-size: 5rem;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.75rem;
+}
+
+.prev__btn {
+    border-radius: 50%;
+    background-image: url('../../../../img/content/AboutPage/Group10.svg');
+    width: 48px;
+    height: 48px;
+    font-size: 0px;
+}
+
+.next__btn {
+    border-radius: 50%;
+    background-image: url('../../../../img/content/AboutPage/Group9.svg');
+    width: 48px;
+    height: 48px;
+    font-size: 0px;
+}
+
+.prev__btn,
+.next__btn {
+    position: relative;
+    margin: 295px 25px 20px 25px
+}
+
+.prev__btn:hover,
+.next__btn:hover {
+    color: #ccc;
+}
+
+.slide {
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+}
+
+.slider {
+    background-color: #F6F6F7;
+}
+
+.title__slide {
+    padding-top: 59px;
+    padding-bottom: 29px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3DA7B4;
+
+}
+
+.title__descr {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 805px;
+    margin-bottom: 100px;
+}
+
+.slide__first {
+    display: flex;
+
+
+    margin-top: 35px;
+}
+
+.slide__first_title {
+    text-align: start;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(14, 14, 44, 0.6);
+    max-width: 447px;
+}
+
+.slide__first__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E0E2C;
+
+}
+
+.slide__first__descr {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(14, 14, 44, 0.8);
+    max-width: 217px;
+
+}
+
+.text {
+    margin-left: 8px;
+}
+
+.second__text {
+    margin-left: 8px;
+}
+
+
+
+
+
+
+
+.slide__second_second {
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.slide__second {
+    display: flex;
+
+    margin-top: 65px;
+}
+
+.slide__second_title {
+    text-align: start;
+    max-width: 447px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(14, 14, 44, 0.6);
+}
+
+.slide__second__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #0E0E2C;
+}
+
+.slide__second__descr {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(14, 14, 44, 0.8);
+    width: 100%;
+    max-width: 265px;
+}

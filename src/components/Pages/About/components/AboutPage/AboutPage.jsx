@@ -3,6 +3,7 @@ import Footer from "../../../../Global/Footer/Footer";
 import styles from '../AboutPage/AboutPage.module.scss'
 import Base from "../Base/Base";
 import Conversation from "../Conversation/Conversation";
+import Reviews from "../Reviews/Reviews";
 import Team from "../Team/Team";
 import Title from "../Title/Title";
 
@@ -24,9 +25,12 @@ const AboutPage = () => {
             <div>
                 <Team />
             </div>
+            <div>
+                <Reviews/>
+            </div>
             
         </div>
-        {/* <Footer/> */}
+        <Footer/>
         </div>
     )
 }

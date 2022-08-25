@@ -1,13 +1,10 @@
 import React from "react";
 import styles from "../Team/Team.module.scss";
+import ava from '../../../../img/content/AboutPage/Rectangle26.png';
+
 
 const Team = () => {
-    // const teamData = [
-    //     {name: 'Салиева Нургул', position: 'Директор'},
-    //     {name: 'Качкынбай уулу Шамшыбек', position: 'Заместитель директора'},
-    //     {name: 'Мукашев Тимур', position: 'Начальник'},
-    //     {name: 'Антон Кан', position: 'Начальник'}
-    // ]
+   
 
     return (
         <div>
@@ -22,27 +19,27 @@ const Team = () => {
 					
 					<div className={styles.personal__blocks}>
 						<div className={styles.personal__block}>
-							
+						<img src={ava} alt=""/>
 							<div className={styles.personal__block_item}></div>
 							<div className={styles.personal__block_title}>Салиева Нургул</div>
 							<div className={styles.personal__block_descr}>Директор</div>
 						</div>
 						<div className={styles.personal__block}>
-							
+						<img src={ava} alt=""/>
 							<div className={styles.personal__block_item}>
-								<div className={styles.personal__block_title}>Качкынбай уулу Шамшыбек</div>
+								<div className={styles.personal__block_title}>Качкынбай уулу <br/> Шамшыбек</div>
 								<div className={styles.personal__block_descr}>Заместитель <br/> директора</div>
 							</div>
 							
 						</div>
 						<div className={styles.personal__block}>
-							
+						<img src={ava} alt=""/>
 							<div className={styles.personal__block_item}></div>
 							<div className={styles.personal__block_title}>Мукашев Тимур</div>
 							<div className={styles.personal__block_descr}>Начальник</div>
 						</div>
 						<div className={styles.personal__block}>
-							
+						<img src={ava} alt=""/>
 							<div className={styles.personal__block_item}>
 								<div className={styles.personal__block_title}>Антон Кан</div>
 							<div className={styles.personal__block_descr}>Директор</div>
