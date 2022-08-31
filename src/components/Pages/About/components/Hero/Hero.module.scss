@@ -1,9 +1,9 @@
 .about {
     padding-top: 62px;
     padding-bottom: 24px;
-   max-width: 66px;
+    max-width: 66px;
     margin: 0 auto;
-    
+
 
     font-family: 'Manrope';
     font-style: normal;
@@ -13,6 +13,26 @@
     /* identical to box height, or 34px */
     /* 2 */
     color: #3DA7B4;
+
+    @media screen and (max-width:768px) {
+        width: 50px;
+        height: 18px;
+        margin-left: 16px;
+        padding-bottom: 24px;
+
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        /* identical to box height, or 100% */
+
+
+        color: #F8A90D;
+
+
+    }
 }
 
 .color {
@@ -35,7 +55,7 @@
 }
 
 .title {
-    
+
 
 
     margin: 0 auto;
@@ -51,15 +71,36 @@
     text-align: center;
 
     color: #0E0E2C;
+
+    @media screen and (max-width: 768px) {
+
+        
+        max-width: 330px;
+        text-align: left;
+        margin: 0 auto;
+
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        /* or 125% */
+
+
+        color: #0E0E2C;
+
+    }
 }
+
 .base {
-   
+
     margin: 0 auto;
     max-width: 730px;
     padding-top: 16px;
     padding-bottom: 48px;
 
-    
+
 
     font-family: 'Manrope';
     font-style: normal;
@@ -70,7 +111,21 @@
 
     text-align: center;
     color: rgba(14, 14, 44, 0.6);
+
+    @media screen and (max-width:768px) {
+
+        max-width: 330px;
+        text-align: left;
+        margin: 0 auto;
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
+
 .btn {
     display: flex;
     gap: 13px;
@@ -80,21 +135,27 @@
 
 
 
-background: #1DA7B4;
-border-radius: 4px;
+    background: #1DA7B4;
+    border-radius: 4px;
 
-font-family: 'Manrope';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 140%;
-/* or 25px */
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
 
 
-/* Background/white */
+    /* Background/white */
 
-color: #FFFFFF;
+    color: #FFFFFF;
+
+    @media screen and (max-width:768px) {
+        min-width: 330px;
+        margin: 0 auto;
+    }
 }
+
 .linkBtn_m {
     display: flex;
     align-items: center;
@@ -103,9 +164,22 @@ color: #FFFFFF;
     line-height: 140%;
     gap: 13px;
     padding: 8px;
+    @media screen and (max-width:768px) {
+        margin: 0 auto;
+        padding-bottom: 99px;
+    }
 }
+
 .box {
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     gap: 30px;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 35px;
+        
+    }
 }

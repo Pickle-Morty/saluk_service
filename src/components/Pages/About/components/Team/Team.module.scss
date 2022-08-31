@@ -1,42 +1,68 @@
-
-
 body {
 	width: 100%;
 	line-height: 1;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'El Messiri', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	font-family: 'El Messiri', sans-serif;
 }
 
 
-._container {
+.team__container {
 	margin: 0 auto;
 	max-width: 1130px;
 }
 
 .team {
-	
+
 	margin-top: 200px;
+
+
 }
 
 .team__body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+
+
+	}
+
 }
 
 
 
 .team__title {
-	
+
 	font-family: 'Manrope';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 24px;
 	line-height: 28px;
-	margin-bottom: 29px;
 	color: #3DA7B4;
+
+	@media screen and (max-width: 768px) {
+		width: 73px;
+		height: 22px;
+
+
+
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 22px;
+		/* identical to box height, or 138% */
+
+
+		color: #F8A90D;
+
+	}
 }
 
 .team__descr {
@@ -48,13 +74,39 @@ body {
 	font-weight: 800;
 	font-size: 32px;
 	line-height: 140%;
-	position: relative;
+
+
+	@media screen and (max-width:768px) {
+		padding-bottom: 40px;
+
+		margin: 0 auto;
+		text-align: left;
+		min-width: 330px;
+		min-height: 120px;
+		padding-right: 50px;
+
+
+
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 28px;
+
+		color: #0E0E2C;
+
+	}
 }
 
 .personal__blocks {
 	display: flex;
-	gap: 30px;
-	
+	gap: 30px 16px;
+
+	@media screen and (max-width:768px) {
+		display: flex;
+		justify-content: center;
+	}
+
 }
 
 .personal__block_title {
@@ -81,6 +133,55 @@ body {
 	margin-top: 12px;
 }
 
+.nextArrow {
+	background-image: url("../../../../img/icons/arrowRightBrn.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	width: 48px;
+	height: 48px;
+	bottom: 70px;
+	right: calc(50% - 72px);
+	z-index: 10;
+	cursor: pointer;
 
+	@media screen and (max-width:768px) {
+		right: calc(50% - 72px);
+		position: absolute;
+		top: 406px;
+	}
+}
 
+.prevArrow {
+	background-image: url("../../../../img/icons/arrowLeftBtn.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	width: 48px;
+	height: 48px;
+	bottom: 70px;
+	right: calc(50% + 24px);
+	z-index: 10;
+	cursor: pointer;
 
+	@media screen and (max-width:768px) {
+		right: calc(50% + 24px);
+		position: absolute;
+		top: 406px;
+
+	}
+}
+
+// .personal__block {
+// 	display: flex;
+// 	gap: 30px 16px;
+// 	flex-direction: column;
+// 	@media screen and (max-width:768px) {
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }

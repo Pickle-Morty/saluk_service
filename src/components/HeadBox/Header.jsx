@@ -1,12 +1,24 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, } from 'react';
 import "./Header.scss"
 import logo from "../img/icons/logo.png"
 import searcIcon from "../img/icons/searchIcon.png"
 import menuIcon from "../img/icons/menuIcon.svg"
-import {NavLink} from "react-router-dom"
+import {NavLink,  } from "react-router-dom"
 
 
 const Header = () => {
+
+   
+
+    
+
+    
+
+    
+
+
+
+
     const [openNav, setOpenNav] = useState(false)
     return (
         <header className="header container">
@@ -19,15 +31,23 @@ const Header = () => {
                 
                 <ul>
                     <li className="header__li active">
-                        <NavLink to="/">Главная</NavLink>
+                        <NavLink to='/'>Главная</NavLink>
                         </li>
                     <li className="header__li">
                         <NavLink to="/About">О нас</NavLink>
                         </li>
-                    <li className="header__li">Новости</li>
-                    <li className="header__li">Карьера</li>
-                    <li className="header__li">Проекты</li>
-                    <li className="header__li">Контакты</li>
+                    <li className="header__li">
+                        <NavLink to ="/News">Новости</NavLink>
+                    </li>
+                    <li className="header__li">
+                        <NavLink to="/Career">Карьера</NavLink>
+                    </li>
+                    <li className="header__li">
+                        <NavLink to="/Projects">Проекты</NavLink>
+                    </li>
+                    <li className="header__li">
+                        <NavLink to="/Contact">Контакты</NavLink>
+                    </li>
                 </ul>
             </nav>
             <div className="header__box">
