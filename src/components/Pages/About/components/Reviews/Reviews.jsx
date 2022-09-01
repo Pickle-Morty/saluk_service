@@ -6,7 +6,7 @@ import secondAva from "../../../../img/content/AboutPage/EllipseTwo.png";
 
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick} = props;
     return (
         <div
             className={styles.nextArrow}
@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick} = props;
     return (
         <div
             className={styles.prevArrow}
@@ -40,12 +40,9 @@ const Reviews = () => {
             {
                 breakpoint: 768,
                 settings: {
-                    className: "slider",
                     variableWidth: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-
-
                 }
             },
             {
@@ -69,28 +66,35 @@ const Reviews = () => {
             name: 'Адилет Дубанаев', position: 'Заместитель председателя Налоговой службы',
             img: ava,
             text: 'Наша команда создателей цифровых продуктов и Tch Bring Skilled поднимет вашу идею на новый уровень и поможет вам с вашим продуктом.',
-
+            value: 12
         },
         {
             name: 'Илон Маск', position: 'Американский предприниматель, инженер и миллиардер',
             img: secondAva,
             text: 'Благодаря команде ГУ “Салык Сервис” мы запустили Starlink на весь мир и к 2028 году полетим на Марс.',
-
+            value: 3
         },
         {
             name: 'Адилет Дубанаев', position: 'Заместитель председателя Налоговой службы',
             img: ava,
+            value: 5,
             text: 'Наша команда создателей цифровых продуктов и Tch Bring Skilled поднимет вашу идею на новый уровень и поможет вам с вашим продуктом.',
-
         },
         {
             name: 'Илон Маск', position: 'Американский предприниматель, инженер и миллиардер',
             img: secondAva,
+            value: 8,
             text: 'Благодаря команде ГУ “Салык Сервис” мы запустили Starlink на весь мир и к 2028 году полетим на Марс.',
-
         },
     ]
 
+    const otherArray = teamData.map(item => item.name)
+
+    let counter = 0
+
+    teamData.forEach(item => {
+        counter = counter + item.value
+    })
 
 
 
@@ -102,9 +106,10 @@ const Reviews = () => {
             <div className={styles.container}>
                 <h4 className={styles.reviews__title}>Отзывы</h4>
                 <h4 className={styles.reviews__descr}>Вы все еще сомневаетесь в сотрудничестве с нами? Проверьте, что они говорят о нас</h4>
-                <Slider {...settings}>
-                    {teamData.map((person, id) => <div key={id} className={styles.container_container}>
-                        <div className={styles.slider__container}>
+                {/* <Slider {...settings}>
+                    {console.log(counter)}
+                    {teamData.map((person, id) =>
+                        <div key={id} className={styles.slide}>
                             <div className={styles.person}>
                                 <div className={styles.person__title}>{person.text}</div>
                                 <div className={styles.person__info}>
@@ -117,11 +122,27 @@ const Reviews = () => {
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
+                    )}
+                </Slider> */}
+                <Slider {...settings}>
 
-                    </div>)}
+                    {teamData.map((person, id) => <div key = {id} className={styles.slide}>
+                        <div className={styles.slide__wrapper_flex}>
+                            <div className={styles.slide__wrapper_contant}>
+                                <div className={styles.slide__text}>{person.text}</div>
+                                <div className={styles.slide__box}>
+                                    <img src={person.img} alt="" className={styles.slide__img} />
+                                    <div className={styles.slide__col}>
+                                        <div className={styles.slide__name}>{person.name}</div>
+                                        <div className={styles.slide__subtitle}>{person.position}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    )}
                 </Slider>
 
             </div>

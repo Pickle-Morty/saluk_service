@@ -1,14 +1,12 @@
 .reviews {
     margin-bottom: 200px;
     margin-top: 180px;
-    min-height: 699px;
 
 
     background-color: #F6F6F7;
 
-    @media screen and (max-weidght: 768px) {
+    @media screen and (max-width: 768px) {
         margin-bottom: 120px;
-        min-height: 592px;
 
     }
 }
@@ -17,16 +15,96 @@
     max-width: 1130px;
     margin: 0 auto;
     padding: 0 10px;
-    @media  screen and (max-weidth:768px) { 
-        padding: 0 16px 0;
+    height: 100%;
+    padding-bottom: 204px;
+
+    @media screen and (max-width:768px) {
+        padding: 0 16px 150px;
         margin: 0 auto;
-        
+
     }
 
 }
 
+// SLIDE
+
+.slide {
+    width: 50%;
 
 
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+}
+
+.slide__wrapper_flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide__wrapper_contant {
+    max-width: 447px;
+}
+
+.slide__text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+
+
+    color: rgba(14, 14, 44, 0.6);
+
+    min-height: 78px;
+    margin-bottom: 38px;
+
+}
+
+.slide__box {
+    display: flex;
+    gap: 8px;
+}
+
+.slide__col {
+    max-width: 265px;
+
+}
+
+.slide__name {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    /* text */
+
+    color: #0E0E2C;
+    margin-bottom: 6px;
+
+}
+
+.slide__subtitle {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 138% */
+
+
+    color: rgba(14, 14, 44, 0.8);
+}
+
+.slide__img {
+    height: 68px;
+    width: 68px;
+}
 
 
 .reviews__title {
@@ -42,7 +120,7 @@
     @media screen and (max-width:768px) {
         width: 62px;
         height: 22px;
-        margin:0;
+        margin: 0;
 
 
         font-family: 'Manrope';
@@ -73,7 +151,7 @@
 
         text-align: left;
         min-width: 329px;
-        margin: 0 ;
+        margin: 0;
         margin-bottom: 35px;
 
         font-family: 'Manrope';
@@ -101,7 +179,7 @@
     margin: 0 auto;
     width: 48px;
     height: 48px;
-    bottom: 70px;
+    bottom: -100px;
     right: calc(50% - 72px);
     z-index: 10;
     cursor: pointer;
@@ -120,7 +198,7 @@
     margin: 0 auto;
     width: 48px;
     height: 48px;
-    bottom: 70px;
+    bottom: -100px;
     right: calc(50% + 24px);
     z-index: 10;
     cursor: pointer;
@@ -141,7 +219,7 @@
 
 .person__title {
     padding-right: 24px;
-    
+
     min-height: 74px;
     text-align: start;
     font-family: 'Manrope';
@@ -152,8 +230,8 @@
     color: rgba(14, 14, 44, 0.6);
     max-width: 447px;
 
-    @media screen and (max-weidght:768px) {
-        
+    @media screen and (max-width:768px) {
+
         text-align: left;
         min-width: 329px;
         min-height: 78px;
@@ -179,7 +257,7 @@
     line-height: 25px;
     color: #0E0E2C;
 
-    @media screen and (max-weidght:768px) {
+    @media screen and (max-width:768px) {
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
@@ -201,7 +279,7 @@
 
     color: rgba(14, 14, 44, 0.8);
 
-    @media screen and(max-weidght:768px) {
+    @media screen and(max-width:768px) {
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
@@ -232,9 +310,9 @@
 
     margin-top: 35px;
 
-    @media screen and (max-weidght:768px) {
+    @media screen and (max-width:768px) {
         justify-content: center;
-        
+
     }
 
 
