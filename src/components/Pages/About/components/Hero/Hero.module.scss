@@ -1,8 +1,18 @@
+.hero__container {
+    @media screen and (max-weidth:768px) {
+        padding: 0 15px 0;
+        margin: 0 auto;
+        
+    }
+}
+
+
 .about {
     padding-top: 62px;
     padding-bottom: 24px;
     max-width: 66px;
-    margin: 0 auto;
+    margin: 0 auto ;
+   
 
 
     font-family: 'Manrope';
@@ -17,7 +27,7 @@
     @media screen and (max-width:768px) {
         width: 50px;
         height: 18px;
-        margin-left: 16px;
+        margin:0;
         padding-bottom: 24px;
 
 
@@ -58,7 +68,7 @@
 
 
 
-    margin: 0 auto;
+    margin: 0  auto;
     max-width: 762px;
 
     font-family: 'Manrope';
@@ -75,9 +85,9 @@
     @media screen and (max-width: 768px) {
 
         
-        max-width: 330px;
+        min-width: 330px;
         text-align: left;
-        margin: 0 auto;
+        margin: 0 ;
 
 
         font-family: 'Manrope';
@@ -114,9 +124,9 @@
 
     @media screen and (max-width:768px) {
 
-        max-width: 330px;
+        min-width: 330px;
         text-align: left;
-        margin: 0 auto;
+        margin: 0  ;
 
         font-family: 'Manrope';
         font-style: normal;
