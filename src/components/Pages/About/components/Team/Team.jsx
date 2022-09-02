@@ -4,7 +4,7 @@ import ava from '../../../../img/content/AboutPage/Rectangle26.png';
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
-    const {className, style, onClick} = props;
+    const { className, style, onClick } = props;
     return (
         <div
             className={styles.nextArrow}
@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-    const {className, style, onClick} = props;
+    const { className, style, onClick } = props;
     return (
         <div
             className={styles.prevArrow}
@@ -33,12 +33,13 @@ const Team = () => {
         slidesToShow: 4,
         slidesToScroll: 4,
         swipe: true,
-        arrow: false,
+        arrow: true,
 
         responsive: [
             {
                 breakpoint: 980,
                 settings: {
+                    arrow: true,
                     variableWidth: false,
                     slidesToShow: 3,
                     slidesToScroll: 2,
@@ -47,6 +48,7 @@ const Team = () => {
             {
                 breakpoint: 850,
                 settings: {
+                    arrow: true,
                     variableWidth: false,
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -57,7 +59,18 @@ const Team = () => {
                 breakpoint: 768,
                 settings: {
                     arrow: true,
-                    slidesToShow: 3,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
+
+                }
+            },
+            {
+                breakpoint: 414,
+                settings: {
+                    arrow: true,
+                    slidesToShow: 2,
                     slidesToScroll: 2,
                     nextArrow: <SampleNextArrow />,
                     prevArrow: <SamplePrevArrow />

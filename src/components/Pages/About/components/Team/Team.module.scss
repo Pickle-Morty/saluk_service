@@ -180,6 +180,8 @@ body {
 
     @media screen and (max-width:768px) {
         flex-direction: column;
+        gap: 40px;
+
     }
 }
 
@@ -192,6 +194,17 @@ body {
     line-height: 140%;
     color: #0E0E2C;
     max-width: 350px;
+
+    @media screen and(max-width:768px) {
+        ont-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 16px;
+        
+
+    }
 
 }
 
@@ -226,6 +239,15 @@ body {
     color: #0E0E2C;
     min-height: 48px;
     margin-bottom: 12px;
+
+    @media screen and(max-width: 768px) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
 }
 
 .slide__pos {
@@ -236,12 +258,26 @@ body {
     line-height: 25px;
 
     color: rgba(14, 14, 44, 0.6);
+
+    @media screen and(max-width:768px) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+    }
 }
 
 .slide__wrapper_flex {
     width: 100%;
     display: flex;
     justify-content: center;
+
+    @media screen and(max-width:768px) {
+        
+
+    }
 }
 
 
