@@ -1,0 +1,297 @@
+body {
+    width: 100%;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'El Messiri', sans-serif;
+}
+
+
+.team__container {
+    margin: 0 auto;
+    max-width: 1130px;
+}
+
+.team {
+
+    padding: 202px 0 180px;
+
+
+
+}
+
+.team__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.team__title {
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3DA7B4;
+
+    @media screen and (max-width: 768px) {
+        width: 73px;
+        height: 22px;
+
+
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 138% */
+
+
+        color: #F8A90D;
+
+    }
+}
+
+.team__descr {
+    padding-top: 29px;
+    margin-right: 30px;
+    max-width: 350px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 140%;
+
+
+    @media screen and (max-width:768px) {
+        padding-bottom: 40px;
+
+        margin: 0;
+        text-align: left;
+        min-width: 330px;
+        min-height: 120px;
+        padding-right: 50px;
+
+
+
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+
+        color: #0E0E2C;
+
+    }
+}
+
+.personal__blocks {
+    display: flex;
+    gap: 30px 16px;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+.personal__block_title {
+    margin-top: 16px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.personal__block_descr {
+    margin-top: 36px;
+    align-items: center;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(14, 14, 44, 0.6);
+}
+
+.personal__block_descr:nth-child(2) {
+    margin-top: 12px;
+}
+
+.nextArrow {
+    background-image: url("../../../../img/icons/arrowRightBrn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    z-index: 10;
+    right: calc(50% - 72px);
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        right: calc(50% - 72px);
+        position: absolute;
+        top: 406px;
+    }
+}
+
+.prevArrow {
+    background-image: url("../../../../img/icons/arrowLeftBtn.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    width: 48px;
+    height: 48px;
+    bottom: 0;
+    right: calc(50% + 24px);
+    z-index: 10;
+    cursor: pointer;
+
+    @media screen and (max-width:768px) {
+        right: calc(50% + 24px);
+        position: absolute;
+        top: 406px;
+
+    }
+}
+
+// GOSHA CODE
+.teamG__content {
+    display: flex;
+    gap: 75px;
+
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        gap: 40px;
+
+    }
+}
+
+.teamG__title {
+    padding-top: 29px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 140%;
+    color: #0E0E2C;
+    max-width: 350px;
+    min-width: 290px;
+
+    @media screen and(max-width:768px) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 16px;
+
+
+    }
+
+}
+
+.teamG__slider {
+    max-width: 760px;
+    overflow: hidden;
+
+    @media screen and (max-width:768px) {
+        overflow: visible;
+    }
+}
+
+.team__slider {
+    max-width: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width:768px) {
+        overflow: visible;
+    }
+}
+
+
+.slide__img {
+    display: block;
+    margin-bottom: 16px;
+}
+
+.slide__title {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0E0E2C;
+    min-height: 48px;
+    margin-bottom: 12px;
+
+    @media screen and(max-width: 768px) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+}
+
+.slide__pos {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: rgba(14, 14, 44, 0.6);
+
+    @media screen and(max-width:768px) {
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+    }
+}
+
+.slide__wrapper_flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and(max-width:768px) {}
+}
+
+
+.slide__wrapper_contant {
+    width: 160px;
+}
+
+// .personal__block {
+// 	display: flex;
+// 	gap: 30px 16px;
+// 	flex-direction: column;
+// 	@media screen and (max-width:768px) {
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }

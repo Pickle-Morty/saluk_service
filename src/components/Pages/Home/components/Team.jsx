@@ -52,7 +52,7 @@ const Team = () => {
             subtitle: 'Команда креативщиков Who Excited поможет вам с вашей идеей'
         },
         {
-            name: 'Дастан Бообеков', position: 'Менежер',
+            name: 'Дастан Бообеков', position: 'Менеджер',
             img: 'https://previews.123rf.com/images/pressmaster/pressmaster1704/pressmaster170400062/75330432-banquero-elegante.jpg',
             text: 'Lectus nulla at volutpat diam ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum leo',
             title: 'Команда Салык Сервис',
