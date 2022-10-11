@@ -127,20 +127,21 @@ const Reviews = () => {
                 </Slider> */}
                 <Slider {...settings}>
 
-                    {teamData.map((person, id) => <div key = {id} className={styles.slide}>
-                        <div className={styles.slide__wrapper_flex}>
-                            <div className={styles.slide__wrapper_contant}>
-                                <div className={styles.slide__text}>{person.text}</div>
-                                <div className={styles.slide__box}>
-                                    <img src={person.img} alt="" className={styles.slide__img} />
-                                    <div className={styles.slide__col}>
-                                        <div className={styles.slide__name}>{person.name}</div>
-                                        <div className={styles.slide__subtitle}>{person.position}</div>
+                    {teamData.map((person, id) =>
+                        <div key={id} className={styles.slide}>
+                            <div className={styles.slide__wrapper_flex}>
+                                <div className={styles.slide__wrapper_contant}>
+                                    <div className={styles.slide__text}>{person.text}</div>
+                                    <div className={styles.slide__box}>
+                                        <img src={person.img} alt="" className={styles.slide__img} />
+                                        <div className={styles.slide__col}>
+                                            <div className={styles.slide__name}>{person.name}</div>
+                                            <div className={styles.slide__subtitle}>{person.position}</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
                     )}
                 </Slider>

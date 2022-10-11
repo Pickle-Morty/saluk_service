@@ -85,7 +85,7 @@
     @media screen and (max-width: 768px) {
 
         
-        min-width: 330px;
+        // min-width: 330px;
         text-align: left;
         margin: 0 ;
 
@@ -123,8 +123,6 @@
     color: rgba(14, 14, 44, 0.6);
 
     @media screen and (max-width:768px) {
-
-        min-width: 330px;
         text-align: left;
         margin: 0  ;
 
@@ -161,7 +159,8 @@
     color: #FFFFFF;
 
     @media screen and (max-width:768px) {
-        min-width: 330px;
+        // max-width: 330px;
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -181,14 +180,16 @@
 }
 
 .box {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 30px;
+    grid-template-columns: auto auto;
 
     @media screen and (max-width:768px) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+        grid-template-columns: minmax(280px , 330px);
         gap: 35px;
         
     }

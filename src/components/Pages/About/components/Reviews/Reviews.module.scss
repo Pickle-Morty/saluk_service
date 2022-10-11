@@ -1,6 +1,6 @@
 .reviews {
     margin-bottom: 200px;
-    margin-top: 180px;
+    // margin-top: 180px;
 
 
     background-color: #F6F6F7;
@@ -41,10 +41,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 
 .slide__wrapper_contant {
     max-width: 447px;
+    // padding: 0 20px;
+
 }
 
 .slide__text {
@@ -53,6 +56,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    
     /* or 162% */
 
 
@@ -67,7 +71,6 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 26px;
-        min-width: 329px;
         min-height: 78px;
         text-align: left;
 
@@ -129,7 +132,7 @@
 
 
 .reviews__title {
-    padding-top: 100px;
+    padding-top: 60px;
     padding-bottom: 29px;
     font-family: 'Manrope';
     font-style: normal;
@@ -171,7 +174,6 @@
     @media screen and (max-width:768px) {
 
         text-align: left;
-        min-width: 329px;
         margin: 0;
         margin-bottom: 35px;
 
@@ -200,7 +202,7 @@
     margin: 0 auto;
     width: 48px;
     height: 48px;
-    bottom: -100px;
+    bottom: -134px;
     right: calc(50% - 72px);
     z-index: 10;
     cursor: pointer;
@@ -219,7 +221,7 @@
     margin: 0 auto;
     width: 48px;
     height: 48px;
-    bottom: -100px;
+    bottom: -134px;
     right: calc(50% + 24px);
     z-index: 10;
     cursor: pointer;
@@ -254,7 +256,6 @@
     @media screen and (max-width:768px) {
 
         text-align: left;
-        min-width: 329px;
         min-height: 78px;
         font-family: 'Manrope';
         font-style: normal;
@@ -282,7 +283,6 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
-        min-width: 194px;
         min-height: 25px;
 
     }
@@ -304,6 +304,7 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 22px;
+        min-width: 100px
 
     }
 

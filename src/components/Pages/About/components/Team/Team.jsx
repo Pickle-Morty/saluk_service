@@ -4,7 +4,7 @@ import ava from '../../../../img/content/AboutPage/Rectangle26.png';
 import Slider from "react-slick";
 
 function SampleNextArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick} = props;
     return (
         <div
             className={styles.nextArrow}
@@ -14,7 +14,7 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-    const { className, style, onClick } = props;
+    const {className, style, onClick} = props;
     return (
         <div
             className={styles.prevArrow}
@@ -67,11 +67,33 @@ const Team = () => {
                 }
             },
             {
-                breakpoint: 414,
+                breakpoint: 650,
+                settings: {
+                    arrow: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
+
+                }
+            },
+            {
+                breakpoint: 500,
                 settings: {
                     arrow: true,
                     slidesToShow: 2,
                     slidesToScroll: 2,
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />
+
+                }
+            },
+            {
+                breakpoint: 350,
+                settings: {
+                    arrow: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                     nextArrow: <SampleNextArrow />,
                     prevArrow: <SamplePrevArrow />
 
@@ -122,12 +144,12 @@ const Team = () => {
 
 
     return (
-        <div>
-            <div className={styles.wrapper}>
-                <section className={styles.team}>
-                    <div className={styles.team__title}>Команда </div>
-                    <div className={styles.team__container}>
-                        {/* <div className={styles.team__body}>
+
+
+        <section className={styles.team}>
+            <div className={styles.team__title}>Команда </div>
+            <div className={styles.team__container}>
+                {/* <div className={styles.team__body}>
                             <div className={styles.team__descr}>Познакомьтесь с удивительными и творческими членами нашей команды</div>
                             <Slider {...settings}>{teamData.map((person, id) =>
                                 <div key={id} className={styles.team__blocks}>
@@ -140,31 +162,30 @@ const Team = () => {
                             </Slider>
 
                         </div> */}
-                        <div className={styles.teamG__content}>
-                            <div className={styles.teamG__title}>
-                                Познакомьтесь с удивительными и творческими членами нашей команды
+                <div className={styles.teamG__content}>
+                    <div className={styles.teamG__title}>
+                        Познакомьтесь с удивительными и творческими членами нашей команды
                             </div>
-                            <div className={styles.teamG__slider}>
-                                <Slider {...settings}>{ }
-                                    {teamData.map((item, id) =>
-                                        <div key={id} className={styles.slide}>
-                                            <div className={styles.slide__wrapper_flex}>
-                                                <div className={styles.slide__wrapper_contant}>
-                                                    <img src={item.img} alt="" className={styles.slide__img} />
-                                                    <div className={styles.slide__title}>{item.name}</div>
-                                                    <div className={styles.slide__pos}>{item.position}</div>
-                                                </div>
-                                            </div>
-                                        </div>)}
-                                </Slider>
-                            </div>
-                        </div>
+                    <div className={styles.teamG__slider}>
+                        <Slider {...settings}>{ }
+                            {teamData.map((item, id) =>
+                                <div key={id} className={styles.slide}>
+                                    <div className={styles.slide__wrapper_flex}>
+                                        <div className={styles.slide__wrapper_contant}>
+                                            <img src={item.img} alt="" className={styles.slide__img} />
+                                            <div className={styles.slide__title}>{item.name}</div>
+                                            <div className={styles.slide__pos}>{item.position}</div>
+                                        </div>
+                                    </div>
+                                </div>)}
+                        </Slider>
                     </div>
-                </section>
+                </div>
             </div>
+        </section>
 
 
-        </div>
+
     )
 }
 
